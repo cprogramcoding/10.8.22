@@ -1,0 +1,27 @@
+#include<stdio.h>
+void main()
+{
+int n,r,a,sum=0;
+printf("enter any number");
+scanf("%d",&n);
+a=n;
+while(n>0)
+{
+r=n%10;
+sum=sum+r;
+n=n/10;
+}
+if(a%sum==0)
+printf("Harshad Number");
+else
+printf("Not harshad Number");
+}
+
+
+out putr:
+enter any number 156
+Harshad Number
+
+
+enter any number 22
+Not Harshad Number
