@@ -1,0 +1,22 @@
+#include<stdio.h>
+void main()
+{
+ long int n;
+int x,y,r,sum=0,k=1,a;
+printf("enter any number");
+scanf("%ld",&n);
+printf("enter x and y values");
+scanf("%d%d",&x,&y);
+while(n>0)
+{
+r=n%10;
+if(r==sum)
+sum=sum+y*k;
+else
+sum=sum+r*k;
+k=k*10;
+n=n/10;
+}
+printf("%d",sum);
+getch();
+}
